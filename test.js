@@ -20,7 +20,20 @@ var showExamples = function(){
 	else
 		console.log("5 is not equal to the random number");
 
-	
+	//check for undifined access
+	var student = [{
+		name: "Costas",
+		age: 22,
+		height: undefined
+	}];
+
+	var height = student.notHeight;
+	student.age = undefined;
+	/*if(typeof myVar === undefined)
+		console.long("myVar is undefined");
+	else
+		console.long("myVar is defined");
+	*/
 };
 
 function randNum(min,max)
